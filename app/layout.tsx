@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jost, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"; // for website analytics
 
 const jost = Jost({
   variable: "--font-jost",
@@ -25,7 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${jost.variable} ${inter.variable}`}>
-      <body className="font-body">{children}</body>
+      <body className="font-body">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
