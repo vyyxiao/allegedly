@@ -42,7 +42,7 @@ export default function Home() {
       Ask a Question
     </h1>
     <h2 className="mb-16 mt-3 text-2xl text-gray-800"> 
-      all questions deserve to an answer. allegedly. 
+      all questions deserve an answer. allegedly. 
     </h2>
 
     {/* search bar */}
@@ -51,7 +51,7 @@ export default function Home() {
         type="text"
         value={query}
         onChange={(questionAsked) => setQuery(questionAsked.target.value)}
-        placeholder='try "should I get a treadmill?" Or, "why does Stanford have so many palm trees?"'
+        placeholder='try "should I get a treadmill?" Or, "why does stanford have so many palm trees?"'
         /**
         * w-1/3:: 50% of width
         * rounded-full:: rounded ends for pill shape
