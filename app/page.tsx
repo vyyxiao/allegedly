@@ -42,7 +42,7 @@ export default function Home() {
       Ask a Question
     </h1>
     <h2 className="mb-16 mt-3 text-2xl text-gray-800"> 
-      all questions deserve to be answered. allegedly. 
+      all questions deserve to an answer. allegedly. 
     </h2>
 
     {/* search bar */}
